@@ -14,34 +14,30 @@
     </style>
 </head>
 <body>
-    <div id="app" >
+    <div id="app" @mouseenter="fn">
         {{msg}}
         <input type="checkbox" >
     </div>
 </body>
 <script src="./node_modules/vue/dist/vue.js"></script>
 <script>
-    var app = document.getElementById('app');
-    app.onmouseenter = function() {
-        console.log(111);
-        
-    }
-    // const vm = new Vue({
-    //     el: "#app",
-    //     data: {
-    //         msg: "hello world",
-    //         ck: true
-    //     },
-    //     methods: {
-    //         // fn() {
-    //         //     console.log(111);
+    
+    const vm = new Vue({
+        el: "#app",
+        data: {
+            msg: "hello world",
+            ck: true
+        },
+        methods: {
+            fn() {
+                console.log(111);
                 
-    //         // },
-    //         // gn() {
-    //         //     console.log(222);
+            },
+            // gn() {
+            //     console.log(222);
                 
-    //         // }
-    //     }
-    // })
+            // }
+        }
+    })
 </script>
 </html>
