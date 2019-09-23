@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #app {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" >
+        {{msg}}
+        <input type="checkbox" >
+    </div>
+</body>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script>
+    var app = document.getElementById('app');
+    app.onmouseenter = function() {
+        console.log(111);
+        
+    }
+    // const vm = new Vue({
+    //     el: "#app",
+    //     data: {
+    //         msg: "hello world",
+    //         ck: true
+    //     },
+    //     methods: {
+    //         // fn() {
+    //         //     console.log(111);
+                
+    //         // },
+    //         // gn() {
+    //         //     console.log(222);
+                
+    //         // }
+    //     }
+    // })
+</script>
+</html>
